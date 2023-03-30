@@ -3,12 +3,12 @@ package loopPackage;
 public class PrintTableOf2 {
 	
 	int number;
-	int n;
+	int counterNumber;
 	void printMultiplies() {
-		while(n<=10) {
+		while(counterNumber<=10) {
 			
-			System.out.println(number*n);
-			n++;
+			System.out.println(number*counterNumber);
+			counterNumber++;
 		}
 	}
 
