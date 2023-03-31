@@ -20,12 +20,16 @@ public class ForLoopDemo {
 			withdrawAmount = sc.nextInt();
 
 			if (enterPIN == actualPIN && withdrawAmount < availableBalance) {
+				
 				System.out.println("The entered PIN is correct and balance available for withdrawal");
 
 				System.out.println("The amount withdrawn is : " + withdrawAmount);
 				break;
 			} else {
 				System.out.println("The entered PIN is incorrect or you don't have available balance");
+				
+					System.out.println("Available balance is "+availableBalance);
+					
 
 			}
 		}
