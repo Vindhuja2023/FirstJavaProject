@@ -7,7 +7,8 @@ public class ForMainClass {
 		ForLoopDemo forloop = new ForLoopDemo();
 		forloop.actualPIN = 1234;
 		forloop.availableBalance = 5000;
-		forloop.checkATMCardisworking();
+		forloop.checkATMCardCanWithdrawMoney();
+		
 
 	}
 

@@ -10,7 +10,7 @@ public class ForLoopDemo {
 	int availableBalance;
 	Scanner sc = new Scanner(System.in);
 
-	void checkATMCardisworking() {
+	void checkATMCardCanWithdrawMoney() {
 		int counter;
 
 		for (counter = 1; counter <= 3; counter++) {
