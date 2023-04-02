@@ -6,8 +6,8 @@ public class ForLoopDemo {
 
 	int actualPIN;
 	int enterPIN;
-	int withdrawAmount;
 	int availableBalance;
+	int withdrawAmount;
 	Scanner sc = new Scanner(System.in);
 
 	void checkATMCardCanWithdrawMoney() {
@@ -16,23 +16,26 @@ public class ForLoopDemo {
 		for (counter = 1; counter <= 3; counter++) {
 			System.out.println("Enter the PIN");
 			enterPIN = sc.nextInt();
-			System.out.println("Enter the withdraw amount");
-			withdrawAmount = sc.nextInt();
-
-			if (enterPIN == actualPIN && withdrawAmount < availableBalance) {
+			if (enterPIN == actualPIN) {
+				System.out.println("Entered PIN is correct ");
+						System.out.println("Enter the withdrawal amount: ");
+						 withdrawAmount = sc.nextInt();
+						 if(withdrawAmount < availableBalance) {
 				
-				System.out.println("The entered PIN is correct and balance available for withdrawal");
+				System.out.println("Balance available for withdrawal");
 
 				System.out.println("The amount withdrawn is : " + withdrawAmount);
 				break;
-			} else {
-				System.out.println("The entered PIN is incorrect or you don't have available balance");
-				
+				}else {
+					System.out.println("Balance is not available for withdrawal,try again");
 					System.out.println("Available balance is "+availableBalance);
-					
 
-			}
-		}
+				}
+			} else {
+				System.out.println("The entered PIN is incorrect ,try again with valid PIN");
+				
+				}}
+		
 		if (counter >= 4)
 
 		{
