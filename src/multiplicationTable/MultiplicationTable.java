@@ -1,4 +1,4 @@
-package multiplication;
+package multiplicationTable;
 
 import java.util.Scanner;
 

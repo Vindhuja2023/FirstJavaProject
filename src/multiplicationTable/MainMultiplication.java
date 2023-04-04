@@ -1,4 +1,4 @@
-package multiplication;
+package multiplicationTable;
 
 public class MainMultiplication {
 
