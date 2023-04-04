@@ -1,8 +1,8 @@
-package integerProgram;
+package primeNumber;
 
 import java.util.Scanner;
 
-public class Integer {
+public class PrimeCheck {
 
 	int inputNumber;
 	Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Integer {
 
 		} else if (inputNumber == 0) {
 			System.out.println(
-					"Entered number is 0,it can not be resolved to a positive number nor to be a prime number.");
+					"Entered number is 0,it can not be consider to a positive number nor to be a prime number.");
 		} else {
 			System.out.println("Entered number is negative integer");
 		}

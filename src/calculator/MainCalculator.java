@@ -36,6 +36,7 @@ public class MainCalculator {
 			break;
 		default:
 			System.out.println("Invalid Operation");
+			
 		}
 
 	}

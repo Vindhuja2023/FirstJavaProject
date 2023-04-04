@@ -2,19 +2,25 @@ package waterTank;
 
 public class TankFilling {
 
-	int tankCapacity;
-
 	void WaterTankFilling() {
+		int tankCapacity = 100;
+		int currentLevel = 6;
 
-		int level = 0;
+		while (currentLevel <= tankCapacity) {
+			System.out.println("The waterlevel in tank is " + currentLevel);
 
-		while (level <= tankCapacity) {
-			System.out.println("The waterlevel in tank is " + level);
-			level += 10;
-		}
-		if (level > tankCapacity) {
-			System.out.println("Tank reached it's maximum level,stop tank filling or it will overflow");
+			if (currentLevel > 90 && currentLevel < 100) {
 
+				int finalLevel = (tankCapacity - currentLevel) + currentLevel;
+				System.out.println("The waterlevel in tank is " + finalLevel);
+
+			}
+			currentLevel += 10;
+
+			if (currentLevel > tankCapacity) {
+				System.out.println("Tank reached it's maximum level,stop tank filling or it will overflow");
+
+			}
 		}
 	}
 }
