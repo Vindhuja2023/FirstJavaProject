@@ -13,24 +13,21 @@ public class GeneratePizzaBill {
 		} else if (size.equals("Large")) {
 			price = 25;
 		}
-
 	}
 
-	void isPepperoniNeed(boolean addPepperoni, String size) {
-		if (addPepperoni && size.equals("Small")) {
+	void isPepperoniNeed(String addPepperoni, String size) {
+		if (addPepperoni.equals("Y") && size.equals("Small")) {
 			price += 2;
-		} else if (addPepperoni && (size.equals("Medium") || size.equals("Large"))) {
+		} else if (addPepperoni.equals("Y") && (size.equals("Medium") || size.equals("Large"))) {
 			price += 3;
 
 		}
-
 	}
 
-	void isCheeseNeed(boolean addCheese) {
-		if (addCheese) {
+	void isCheeseNeed(String addCheese) {
+		if (addCheese.equals("Y")) {
 			price += 1;
 		}
-
 	}
 
 	void finalBill() {
